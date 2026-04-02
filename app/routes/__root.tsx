@@ -1,6 +1,4 @@
-import { createRootRoute } from '@tanstack/react-router'
-import { Outlet, ScrollRestoration } from '@tanstack/react-router'
-import { Body, Head, Html, Meta, Scripts } from '@tanstack/react-start'
+import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router'
 import * as React from 'react'
 
 export const Route = createRootRoute({
@@ -14,15 +12,14 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <Html>
-      <Head>
-        <Meta />
-      </Head>
-      <Body>
+    <html>
+      <head>
+        <HeadContent />
+      </head>
+      <body>
         <Outlet />
-        <ScrollRestoration />
         <Scripts />
-      </Body>
-    </Html>
+      </body>
+    </html>
   )
 }
