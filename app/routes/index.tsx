@@ -13,6 +13,7 @@ function HomeComponent() {
       
       <nav style={{ marginTop: '20px' }}>
         <ul style={{ listStyle: 'none', padding: 0 }}>
+          <li><a href="/dashboard">Dashboard (Todos)</a></li>
           <li><a href="/entities">View Entities</a></li>
           <li><a href="/documents">Manage Documents</a></li>
         </ul>
